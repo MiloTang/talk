@@ -193,7 +193,13 @@ func ExitGroup(conn net.Conn, msg Msg) {
 func ApplyAccount(conn net.Conn, msg Msg) {
 	mysql.Connect()
 	defer mysql.Close()
-	mysql.DML("insert into user(password,nick,age) values(?,?,?)", MD5String(""), "nick", "age")
+	if mysql.DML("insert into user(password,nick,age,register_ip) values(?,?,?,?)", MD5String(""), "nick", "age", conn.RemoteAddr().String()) {
+		mysql.Select("select id from user where register_ip=?", conn.RemoteAddr().String())
+		_, err := fmt.Fprintf(conn, "申请成功"+"\n")
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+	}
 }
 func Login(conn net.Conn, msg Msg) {
 	if _, ok := conns[msg.from]; ok {
@@ -224,7 +230,7 @@ func RandNum(applyType string) int {
 	return randNum
 }
 func GC() {
-	time.AfterFunc(time.Duration(100*10), func() {
+	time.AfterFunc(time.Duration(60)*time.Second, func() {
 		GC()
 	})
 }

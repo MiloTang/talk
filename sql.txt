@@ -4,5 +4,7 @@ CREATE TABLE `user` (
   `nick` varchar(20) DEFAULT '' COMMENT '昵称',
   `age` int(11) DEFAULT '0' COMMENT '年龄',
   `register_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
+  `register_ip` varchar(30) DEFAULT '127.0.0.1:11111',
+  `phone_num` varchar(20) unique,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10000000 DEFAULT CHARSET=utf8mb4;

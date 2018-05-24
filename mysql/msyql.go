@@ -59,26 +59,31 @@ func Select(sqlstmt string, params ...interface{}) []map[string]interface{} {
 	}
 	return Datas
 }
-func DML(sqlstmt string, params ...interface{}) {
+func DML(sqlstmt string, params ...interface{}) bool {
 	stmt, e := db.Prepare(sqlstmt)
 	if e != nil {
 		fmt.Println("请检查sql语句->", sqlstmt, e)
+		return false
 	}
 	_, err = stmt.Exec(params...)
 	if err != nil {
 		fmt.Println("数据操作失败->", err)
+		return false
 	}
 	stmt.Close()
+	return true
 }
-func DDL(sqlstmt string) {
+func DDL(sqlstmt string) bool {
 	stmt, e := db.Prepare(sqlstmt)
 	if e != nil {
 		fmt.Println("请检查sql语句->", sqlstmt, e)
+		return true
 	}
 	if stmt != nil {
 		stmt.Exec()
-		stmt.Close()
 	}
+	stmt.Close()
+	return true
 }
 func Close() {
 	db.Close()
