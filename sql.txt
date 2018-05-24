@@ -1,0 +1,8 @@
+CREATE TABLE `user` (
+  `id` int(8) NOT NULL AUTO_INCREMENT COMMENT '校园号码',
+  `password` varchar(32) DEFAULT '' COMMENT '密码MD5',
+  `nick` varchar(20) DEFAULT '' COMMENT '昵称',
+  `age` int(11) DEFAULT '0' COMMENT '年龄',
+  `register_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10000000 DEFAULT CHARSET=utf8mb4;
