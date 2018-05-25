@@ -1,10 +1,29 @@
 CREATE TABLE `user` (
   `id` int(8) NOT NULL AUTO_INCREMENT COMMENT '校园号码',
-  `password` varchar(32) DEFAULT '' COMMENT '密码MD5',
+  `phone_num` varchar(20) unique,
   `nick` varchar(20) DEFAULT '' COMMENT '昵称',
+  `password` varchar(32) DEFAULT '' COMMENT '密码MD5',
+  `sex` char(1) DEFAULT '1' COMMENT '性别',
   `age` int(11) DEFAULT '0' COMMENT '年龄',
+  `status` char(2) DEFAULT '00' COMMENT '账号状态 00正常,10长期不登陆,20异常',	
   `register_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
   `register_ip` varchar(30) DEFAULT '127.0.0.1:11111',
-  `phone_num` varchar(20) unique,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10000000 DEFAULT CHARSET=utf8mb4;
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"农牧民",20,"17788766123","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"马拉坎南宫",20,"17788766223","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"塞尼",20,"17788766323","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"熬了个通宵",20,"17788766423","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"玫琳凯",20,"17788766523","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"慕尼黑",20,"17788766623","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"蓝屏界面",20,"17788766723","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"可没见你",20,"17788766823","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"拉米娜",20,"17788766923","1");
+insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"苦瓜粉",20,"17788761123","1");
+
+CREATE TABLE `offmsgfriend` (
+  `fromid` int(8) NOT NULL COMMENT '信息发送人',
+  `send_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '信息发送时间',
+  `send_ip` varchar(30) DEFAULT '127.0.0.1:11111',
+  CONSTRAINT `FK_ID` FOREIGN KEY (`fromid`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
