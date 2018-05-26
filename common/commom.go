@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"net"
+	"os"
 	"strings"
 	"time"
 )
@@ -52,4 +53,12 @@ func LessLen(str string, length int) bool {
 }
 func ValidString(str string) bool {
 	return true
+}
+func RootPath() string {
+	path, err := os.Getwd()
+	if err != nil {
+		fmt.Println(err)
+	}
+	path = strings.Replace(path, "\\", "/", -1)
+	return path[0:strings.LastIndex(path, "/")]
 }

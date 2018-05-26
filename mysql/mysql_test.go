@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-func TestSelect(t *testing.T) {
-	got := Select("select * from user")
-	fmt.Println(got[0]["id"])
+func TestConnect(t *testing.T) {
+	fmt.Println(Connect())
 }

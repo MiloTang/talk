@@ -3,6 +3,7 @@ package mysql
 import (
 	"database/sql"
 	"fmt"
+	"talk/common"
 	"talk/config"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -13,12 +14,15 @@ var (
 	err error
 )
 
-func Connect() {
-	link := config.Username + ":" + config.Passwd + "@tcp(" + config.Host + ")/" + config.Database + "?" + config.Charset
+func Connect() bool {
+	conf := config.InitConfig(common.RootPath() + "/config/config.config")
+	link := conf["Username"] + ":" + conf["Passwd"] + "@tcp(" + conf["Host"] + ")/" + conf["Database"] + "?" + conf["Charset"]
 	db, err = sql.Open("mysql", link)
 	if err != nil {
 		fmt.Println(err)
+		return false
 	}
+	return true
 }
 func Select(sqlstmt string, params ...interface{}) []map[string]interface{} {
 	stmt, e := db.Prepare(sqlstmt)
