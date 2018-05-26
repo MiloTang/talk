@@ -44,3 +44,12 @@ func SplitString(str string) ([]string, int) {
 	strArray := strings.Split(str, "|")
 	return strArray, len(strArray)
 }
+func LessLen(str string, length int) bool {
+	if len(str) < length {
+		return true
+	}
+	return false
+}
+func ValidString(str string) bool {
+	return true
+}
