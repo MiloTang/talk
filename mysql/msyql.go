@@ -17,6 +17,11 @@ var (
 func Connect() bool {
 	conf := config.InitConfig(common.RootPath() + "/config/config.config")
 	link := conf["Username"] + ":" + conf["Passwd"] + "@tcp(" + conf["Host"] + ")/" + conf["Database"] + "?" + conf["Charset"]
+	if common.Debug {
+		fmt.Println(conf)
+		fmt.Println(conf["Username"])
+		fmt.Println(link)
+	}
 	db, err = sql.Open("mysql", link)
 	if err != nil {
 		fmt.Println(err)

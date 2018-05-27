@@ -6,6 +6,5 @@ import (
 )
 
 func TestInitConfig(t *testing.T) {
-	got := InitConfig("config.config")
-	fmt.Println(got)
+	fmt.Println(InitConfig("config.config"))
 }

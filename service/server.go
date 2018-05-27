@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"net"
+	"talk/account"
 	"talk/common"
 	"talk/room"
 )
@@ -42,7 +43,8 @@ func echoHandler(messages chan string) {
 		}
 		switch str[1] {
 		case "00001":
-			fmt.Fprintf(conn, "申请账号"+"\n")
+			account.ApplyAccount(conn, msg)
+			//fmt.Fprintf(conn, "申请账号"+"\n")
 		case "00002":
 			fmt.Fprintf(conn, "登陆账号"+"\n")
 		case "00003":
@@ -89,9 +91,7 @@ func StartServer() {
 				}
 			}
 		}
-
 	}
-
 }
 func OnlineList(conns *map[string]net.Conn, IP chan string) {
 	for {

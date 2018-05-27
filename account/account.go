@@ -10,9 +10,15 @@ import (
 func ApplyAccount(conn net.Conn, msg string) {
 	mysql.Connect()
 	defer mysql.Close()
-	if mysql.DML("insert into user(password,nick,age,sex,register_ip,phone_num) values(?,?,?,?,?,?)", common.MD5String(""), "nick", "sex", "age", conn.RemoteAddr().String(), "phone_num") {
-		mysql.Select("select id from user where register_ip=?", conn.RemoteAddr().String())
-		_, err := fmt.Fprintf(conn, "申请成功"+"\n")
+	str, _ := common.SplitString(msg)
+	phone_num := str[2]
+	nick := str[3]
+	password := str[4]
+	sex := str[5]
+	age := str[6]
+	if mysql.DML("insert into user(password,nick,age,sex,register_ip,phone_num) values(?,?,?,?,?,?)", common.MD5String(password), nick, sex, age, conn.RemoteAddr().String(), phone_num) {
+		res := mysql.Select("select id from user where phone_num=?", phone_num)
+		_, err := fmt.Fprintf(conn, "申请成功,号码为:"+res[0]["id"].(string)+"\n")
 		if err != nil {
 			fmt.Println(err.Error())
 		}

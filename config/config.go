@@ -8,7 +8,7 @@ import (
 )
 
 func InitConfig(path string) map[string]string {
-	config := make(map[string]string, 2000)
+	conf := make(map[string]string, 2000)
 	f, err := os.Open(path)
 	if err != nil {
 		panic(err)
@@ -34,8 +34,8 @@ func InitConfig(path string) map[string]string {
 		}
 		temp := strings.Split(s, "=")
 		if len(temp) > 1 {
-			config[temp[0]] = temp[1]
+			conf[temp[0]] = temp[1]
 		}
 	}
-	return config
+	return conf
 }
