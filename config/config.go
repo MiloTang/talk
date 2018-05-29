@@ -7,8 +7,12 @@ import (
 	"strings"
 )
 
-func InitConfig(path string) map[string]string {
-	conf := make(map[string]string, 2000)
+var (
+	Conf              = make(map[string]string, 2000)
+	ConfModTime int64 = 0
+)
+
+func InitConfig(path string) {
 	f, err := os.Open(path)
 	if err != nil {
 		panic(err)
@@ -34,8 +38,11 @@ func InitConfig(path string) map[string]string {
 		}
 		temp := strings.Split(s, "=")
 		if len(temp) > 1 {
-			conf[temp[0]] = temp[1]
+			Conf[strings.TrimSpace(temp[0])] = strings.TrimSpace(temp[1])
 		}
 	}
-	return conf
+}
+func ClearConf(modTime int64) {
+	Conf = make(map[string]string, 2000)
+	ConfModTime = modTime
 }

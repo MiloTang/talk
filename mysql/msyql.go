@@ -15,11 +15,8 @@ var (
 )
 
 func Connect() bool {
-	conf := config.InitConfig(common.RootPath() + "/config/config.config")
-	link := conf["Username"] + ":" + conf["Passwd"] + "@tcp(" + conf["Host"] + ")/" + conf["Database"] + "?" + conf["Charset"]
+	link := config.Conf["Username"] + ":" + config.Conf["Passwd"] + "@tcp(" + config.Conf["Host"] + ")/" + config.Conf["Database"] + "?" + config.Conf["Charset"]
 	if common.Debug {
-		fmt.Println(conf)
-		fmt.Println(conf["Username"])
 		fmt.Println(link)
 	}
 	db, err = sql.Open("mysql", link)
@@ -69,6 +66,8 @@ func Select(sqlstmt string, params ...interface{}) []map[string]interface{} {
 	return Datas
 }
 func DML(sqlstmt string, params ...interface{}) bool {
+	Connect()
+	defer Close()
 	stmt, e := db.Prepare(sqlstmt)
 	if e != nil {
 		fmt.Println("请检查sql语句->", sqlstmt, e)

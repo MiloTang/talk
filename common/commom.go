@@ -7,6 +7,7 @@ import (
 	"net"
 	"os"
 	"strings"
+	"talk/config"
 	"time"
 )
 
@@ -61,4 +62,28 @@ func RootPath() string {
 	}
 	path = strings.Replace(path, "\\", "/", -1)
 	return path[0:strings.LastIndex(path, "/")]
+}
+func GetFileModTime(path string) int64 {
+	f, err := os.Open(path)
+	if err != nil {
+		fmt.Println("open file error")
+		return time.Now().Unix()
+	}
+	defer f.Close()
+
+	fi, err := f.Stat()
+	if err != nil {
+		fmt.Println("stat fileinfo error")
+		return time.Now().Unix()
+	}
+
+	return fi.ModTime().Unix()
+}
+func UpdateConfig(path string) {
+	modTime := GetFileModTime(path)
+	if modTime != config.ConfModTime {
+		config.ClearConf(modTime)
+		config.InitConfig(path)
+		fmt.Println("重新加载被修改的文件")
+	}
 }

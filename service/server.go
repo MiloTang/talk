@@ -13,6 +13,9 @@ func init() {
 
 }
 func main() {
+	rootPath := common.RootPath()
+	configFile := rootPath + "/config/config.config"
+	common.UpdateConfig(configFile)
 	StartServer()
 }
 
