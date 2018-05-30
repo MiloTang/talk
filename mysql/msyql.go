@@ -66,8 +66,6 @@ func Select(sqlstmt string, params ...interface{}) []map[string]interface{} {
 	return Datas
 }
 func DML(sqlstmt string, params ...interface{}) bool {
-	Connect()
-	defer Close()
 	stmt, e := db.Prepare(sqlstmt)
 	if e != nil {
 		fmt.Println("请检查sql语句->", sqlstmt, e)

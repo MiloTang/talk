@@ -8,8 +8,10 @@ import (
 )
 
 var (
-	Conf              = make(map[string]string, 2000)
-	ConfModTime int64 = 0
+	Conf               = make(map[string]string, 2000)
+	ConfModTime int64  = 0
+	ConfigPath  string = ""
+	ConfigFile  string = ""
 )
 
 func InitConfig(path string) {
