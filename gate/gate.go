@@ -18,9 +18,9 @@ func GateWay(msg string) {
 	switch str[1] {
 	case "00001":
 		account.ApplyAccount(conn, msg)
-		//fmt.Fprintf(conn, "申请账号"+"\n")
 	case "00002":
-		fmt.Fprintf(conn, "登陆账号"+"\n")
+		account.Login(conn, msg)
+		//fmt.Fprintf(conn, "登陆账号"+"\n")
 	case "00003":
 		fmt.Fprintf(conn, "退出账号"+"\n")
 	case "00004":
@@ -28,7 +28,8 @@ func GateWay(msg string) {
 	case "00005":
 		fmt.Fprintf(conn, "添加朋友"+"\n")
 	case "00006":
-		fmt.Fprintf(conn, "私聊"+"\n")
+		account.TalkWithFriend(conn, msg)
+		//fmt.Fprintf(conn, "私聊"+"\n")
 	case "00007":
 		room.RoomList(conn)
 	case "00008":

@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"hash/crc32"
 	"log"
 	"net"
 	"os"
@@ -16,6 +15,11 @@ var (
 	err  error
 	conn net.Conn
 )
+
+type Msg struct {
+	returnCode string
+	returnMsg  string
+}
 
 func init() {
 	conn, err = net.Dial("tcp", "127.0.0.1:9999")
@@ -55,8 +59,7 @@ func main() {
 		if trimmedline == "Q" {
 			return
 		} else {
-			//fmt.Fprintf(conn, line)
-			conn.Write(EnPackSendData([]byte(line)))
+			fmt.Fprintf(conn, line)
 		}
 	}
 }
@@ -72,20 +75,4 @@ func CheckError(e error) {
 		log.Fatal(e)
 		panic(e)
 	}
-}
-func EnPackSendData(sendBytes []byte) []byte {
-	packetLength := len(sendBytes) + 8
-	result := make([]byte, packetLength)
-	result[0] = 0xFF
-	result[1] = 0xFF
-	result[2] = byte(uint16(len(sendBytes)) >> 8)
-	result[3] = byte(uint16(len(sendBytes)) & 0xFF)
-	copy(result[4:], sendBytes)
-	sendCrc := crc32.ChecksumIEEE(sendBytes)
-	result[packetLength-4] = byte(sendCrc >> 24)
-	result[packetLength-3] = byte(sendCrc >> 16 & 0xFF)
-	result[packetLength-2] = 0xFF
-	result[packetLength-1] = 0xFE
-	fmt.Println(result)
-	return result
 }
