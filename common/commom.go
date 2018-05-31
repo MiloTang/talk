@@ -11,6 +11,7 @@ import (
 	"net"
 	"os"
 	"strings"
+	"sync"
 	"talk/config"
 	"time"
 )
@@ -33,6 +34,10 @@ var (
 	Talkers = make(map[string][]net.Conn, 10000)
 )
 
+type LockTalker struct {
+	Lock   sync.RWMutex
+	Talker map[string]net.Conn
+}
 type Msg struct {
 	instruct string
 	other    string

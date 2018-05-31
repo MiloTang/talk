@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"talk/account"
 	"talk/common"
+	"talk/friend"
 	"talk/room"
 )
 
@@ -28,7 +29,7 @@ func GateWay(msg string) {
 	case "00005":
 		fmt.Fprintf(conn, "添加朋友"+"\n")
 	case "00006":
-		account.TalkWithFriend(conn, msg)
+		friend.TalkWithFriend(conn, msg)
 		//fmt.Fprintf(conn, "私聊"+"\n")
 	case "00007":
 		room.RoomList(conn)

@@ -33,10 +33,18 @@ func Login(conn net.Conn, msg string) {
 	password := str[3]
 	idInt, _ := strconv.Atoi(id)
 	res := mysql.Select("select phone_num from user where  id=? and password=?", idInt, common.MD5String(password))
-	if res[0]["phone_num"] != "" {
+	if len(res) > 0 {
 		fmt.Fprintf(conn, "00|"+id+"|登陆成功"+"\n")
 		//delete(common.Conns, conn.RemoteAddr().String())
 		common.Talker[id] = conn
+		lvmsg := mysql.Select("select from_id,send_time,send_msg from offmsgfriend where send_to_id=?", id)
+		for _, v := range lvmsg {
+			fmt.Fprintf(conn, "00|"+v["from_id"].(string)+"|"+v["send_time"].(string)+"|"+v["send_msg"].(string)+"|"+"\n")
+
+		}
+		if len(lvmsg) > 0 {
+			mysql.DML("delete from offmsgfriend where send_to_id=?", id)
+		}
 		if common.Debug {
 			fmt.Println(common.Talkers)
 		}
@@ -44,18 +52,6 @@ func Login(conn net.Conn, msg string) {
 		fmt.Fprintf(conn, "01|"+"登陆失败"+"\n")
 	}
 	//fmt.Println(res)
-}
-func TalkWithFriend(conn net.Conn, msg string) {
-	str, _ := common.SplitString(msg)
-	from := str[2]
-	to := str[3]
-	say := str[4]
-	if v, ok := common.Talker[to]; ok {
-		fmt.Fprintf(v, "00|"+from+"说:"+say+"\n")
-	} else {
-		fmt.Fprintf(conn, "01|"+to+"不在线"+"\n")
-	}
-
 }
 func Logout(conn net.Conn) {
 

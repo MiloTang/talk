@@ -22,8 +22,17 @@ insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"拉米�
 insert into user(password,nick,age,phone_num,sex) values(MD5("123456"),"苦瓜粉",20,"17788761123","1");
 
 CREATE TABLE `offmsgfriend` (
-  `fromid` int(8) NOT NULL COMMENT '信息发送人',
+  `from_id` int(8) NOT NULL COMMENT '信息发送人',
   `send_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '信息发送时间',
-  `send_ip` varchar(30) DEFAULT '127.0.0.1:11111',
-  CONSTRAINT `FK_ID` FOREIGN KEY (`fromid`) REFERENCES `user` (`id`)
+  `send_to_id` int(8) DEFAULT 0,
+  `send_msg` varchar(1000) DEFAULT '',
+  CONSTRAINT `FK_ID` FOREIGN KEY (`from_id`) REFERENCES `user` (`id`),
+  CONSTRAINT `FK_ID1` FOREIGN KEY (`send_to_id`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `offmsgfriend` (
+  `from_id` varchar(10) NOT NULL COMMENT '信息发送人',
+  `send_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '信息发送时间',
+  `send_to_id` varchar(10) NOT NULL,
+  `send_msg` varchar(1000) DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
