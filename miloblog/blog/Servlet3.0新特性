@@ -1,0 +1,296 @@
+  
+	<h2>新增注释</h2>
+<p>通过注释无需在web.xml中Servlet或者过滤器进行配置。Servlet3.0新增的注释有@WebServlet、@WebListener、@WebInitParam等。下面分别介绍</p>
+<h3>1.@WebServlet</h3>
+<p> </p>
+<p>@WebServlet注释定义在Servlet的类声明之前，用于定义Servlet<a href="http://www.2cto.com/kf/all/zujian/" target="_blank" class="keylink">组件</a>。使用该注释，就无需在web.xml中对Servlet进行配置。@WebServlet注释包含的属性：</p>
+<table>
+<tbody>
+<tr>
+<td valign="center">
+<p>属性名</p>
+</td>
+<td valign="center">
+<p>类型</p>
+</td>
+<td valign="center">
+<p>描述</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>name</p>
+</td>
+<td valign="center">
+<p>String</p>
+</td>
+<td valign="center">
+<p>指定Servlet的name属性，等价于。如果没有显示指定，则该Servlet的取值即为类的全限定名</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>value</p>
+</td>
+<td valign="center">
+<p>String[]</p>
+</td>
+<td valign="center">
+<p>等价于urlPatterns属性，但两者不能同时使用</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>urlPatterns</p>
+</td>
+<td valign="center">
+<p>String[]</p>
+</td>
+<td valign="center">
+<p>指定一组Servlet的URL匹配模式。等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>loadOnStartup</p>
+</td>
+<td valign="center">
+<p>int</p>
+</td>
+<td valign="center">
+<p>指定Servlet的加载顺序，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>initParams</p>
+</td>
+<td valign="center">
+<p>WebInitParam[]</p>
+</td>
+<td valign="center">
+<p>指定一组Servlet初始化参数，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>asyncSupported</p>
+</td>
+<td valign="center">
+<p>Boolean</p>
+</td>
+<td valign="center">
+<p>指定Servlet是否支持异步操作，等价于</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>description</p>
+</td>
+<td valign="center">
+<p>String</p>
+</td>
+<td valign="center">
+<p>Servlet的描述信息，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>diaplayName</p>
+</td>
+<td valign="center">
+<p>Sting</p>
+</td>
+<td valign="center">
+<p>Servlet显示名，通常配合工具使用，等价于标签</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>2.@WebFilter</h3>
+<p> </p>
+<p>@WebFilter注释用于声明过滤器，该注释会在部署是被容器处理，容器根据具体的实行配置将相应的类部署为过滤器。@WebFilter的属性列表：</p>
+<table>
+<tbody>
+<tr>
+<td valign="center">
+<p>属性名</p>
+</td>
+<td valign="center">
+<p>类型</p>
+</td>
+<td valign="center">
+<p>描述</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>filterName</p>
+</td>
+<td valign="center">
+<p>String</p>
+</td>
+<td valign="center">
+<p>指定过滤器的name属性，等价于</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>Value</p>
+</td>
+<td valign="center">
+<p>Sring[]</p>
+</td>
+<td valign="center">
+<p>等价于urlPatterns属性，但是两者不能同时使用</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>urlPatterns</p>
+</td>
+<td valign="center">
+<p>String[]</p>
+</td>
+<td valign="center">
+<p>指定过滤器的URL匹配模式，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>servletNames</p>
+</td>
+<td valign="center">
+<p>String[]</p>
+</td>
+<td valign="center">
+<p>指定过滤器将应用于哪些Servlet.是@WebServlet中的name属性的取值或者是web.xml中的取值</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>initParams</p>
+</td>
+<td valign="center">
+<p>WebInitParam[]</p>
+</td>
+<td valign="center">
+<p>指定一组过滤器的初始化参数，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>asyncSupported</p>
+</td>
+<td valign="center">
+<p>Boolean</p>
+</td>
+<td valign="center">
+<p>声明过滤器是否支持异步操作，等价于</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>Description</p>
+</td>
+<td valign="center">
+<p>String</p>
+</td>
+<td valign="center">
+<p>过滤器的描述信息，等价于</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>displayName</p>
+</td>
+<td valign="center">
+<p>String</p>
+</td>
+<td valign="center">
+<p>该过滤器的显示名，通常配合工具使用，等价于标签</p>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<p>dispatcherTypes</p>
+</td>
+<td valign="center">
+<p>DispatcherType</p>
+</td>
+<td valign="center">
+<p>指定过滤器的转发模式，具体包括ASYNC/ERROR/FORWADR/INCLUDE/REQUEST</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3>3.@WebListener </h3>
+<p> </p>
+<p>该注释用于声明监听器，还可以用于充当给定Web应用上下文中各种Web事件的监听器类。可以使用@WebListener来标注一个实现
+ServletContextListener/Servlet
+ContextAttributeListener/ServletRequestListner
+/ServletRequestAttributeListener/HttpSessionListener
+/HttpSessionAttributeListener的类。@WebListener注释有一个value属性，该属性为可选属性，用于描述监听
+器信息。使用该注释就不需在web.xml中配置标签了</p>
+<p> </p>
+<h3>4.@WebInitParam</h3>
+<p> </p>
+<p>该注释等价于web.xml中的和的子标签，该注释通常不能单独使用，需配合@WebServlet或@WebFilter使用。他的作用是为Servlet或者过滤器指定初始化参数，@WebInitParam注释包含的属性：</p>
+<p>
+</p>
+
+<tr>
+<td valign="top">
+<p>属性名</p>
+</td>
+<td valign="top">
+<p>类型</p>
+</td>
+<td valign="top">
+<p>是否可选</p>
+</td>
+<td valign="top">
+<p>描述</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Name</p>
+</td>
+<td valign="top">
+<p>String</p>
+</td>
+<td valign="top">
+<p>否</p>
+</td>
+<td valign="top">
+<p>指定参数的名字，等价于</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Value</p>
+</td>
+<td valign="top">
+<p>String</p>
+</td>
+<td valign="top">
+<p>否</p>
+</td>
+<td valign="top">
+<p>指定参数的值，等价于</p>
+</td>
+</tr>
+
+<td valign="top">
+<p>Description</p>
+</td>
+<td valign="top">
+<p>String </p>
+</td>
+<td valign="top">
+<p>是</p>
+</td>
+<td valign="top">
+<p>关于参数的描述，等价于</p></td>

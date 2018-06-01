@@ -1,0 +1,17 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_close()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_close()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_compressedsize()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目的被压缩尺寸。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_compressionmethod()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目的压缩方法。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_filesize()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目的实际文件尺寸。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_name()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目的名称。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_open()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>打开<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个项目以供读取。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_entry_read()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>读取<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的一个打开的项目。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_open()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>打开<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">zip_read()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>读取<span style=" color:#c0c0c0;"> </span>ZIP<span style=" color:#c0c0c0;"> </span>文件中的下一个项目。</pre>

@@ -1,0 +1,187 @@
+  
+	  
+	<span style="color:#006600">一共有九大内置对象:<br>
+</span>
+<p><span style="color:#006600"><span style="white-space:pre"></span>request、response、out、session、application、pageContext、page、config、exception</span></p>
+<p><span style="color:#006600"><span style="white-space:pre"></span>内置对象<span style="font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">（又叫隐含对象)</span>，就是在jsp中，不需要创建（由服务器&lt;容器&gt;来创建），可以直接使用的对象。<br>
+</span></p>
+
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>request &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 请求对象　 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.ServletRequest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作用域 Request</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>response &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;响应对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.SrvletResponse &nbsp; &nbsp; &nbsp; &nbsp;作用域 Page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>pageContext &nbsp; &nbsp; &nbsp; 页面上下文对象 &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.jsp.PageContext &nbsp; &nbsp; &nbsp; 作用域 Page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>session &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 会话对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.http.HttpSession &nbsp; &nbsp; &nbsp;作用域 Session</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>application &nbsp; &nbsp; &nbsp; 应用程序对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.ServletContext &nbsp; &nbsp; &nbsp; &nbsp;作用域 Application</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>out &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 输出对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.jsp.JspWriter &nbsp; &nbsp; &nbsp; &nbsp; 作用域 Page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>config &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;配置对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.servlet.ServletConfig &nbsp; &nbsp; &nbsp; &nbsp; 作用域 Page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>page &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;页面对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.lang.Object &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 作用域 Page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><span style="white-space:pre"></span>exception &nbsp; &nbsp; &nbsp; &nbsp; 例外对象 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;类型 javax.lang.Throwable &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;作用域 page</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+<span style="color:#006600"><br>
+</span></p>
+<p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:宋体; font-size:14px; line-height:25px; background-color:rgb(245,253,255)">
+</p>
+<p style="margin-top:0px; margin-bottom:5px; padding-top:0px; padding-bottom:0px; border:0px; list-style:none; word-wrap:normal; word-break:normal; line-height:21px; font-family:simsun; font-size:14px; background-color:rgb(225,225,225)">
+<span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">page 当前页面有效时间最短</span><span style="font-family:simsun; font-size:14px; line-height:21px; background-color:rgb(225,225,225)"><span style="color:#006600">（页面执行期）</span></span></p>
+<p style="color:rgb(0,102,0); margin-top:0px; margin-bottom:5px; padding-top:0px; padding-bottom:0px; border:0px; list-style:none; word-wrap:normal; word-break:normal; line-height:21px; font-family:simsun; font-size:14px; background-color:rgb(225,225,225)">
+<span style="color:rgb(0,102,0); font-family:simsun; font-size:14px; line-height:21px; background-color:rgb(225,225,225)"><span style="white-space:pre"></span>request HTTP请求开始到结束这段时间</span><br>
+</p>
+<p style="color:rgb(0,102,0); margin-top:0px; margin-bottom:5px; padding-top:0px; padding-bottom:0px; border:0px; list-style:none; word-wrap:normal; word-break:normal; line-height:21px; font-family:simsun; font-size:14px; background-color:rgb(225,225,225)">
+<span style="color:rgb(0,102,0); font-family:simsun; font-size:14px; line-height:21px; background-color:rgb(225,225,225)"><span style="white-space:pre"></span>session HTTP会话开始到结束这段时间</span><br>
+</p>
+<p style="color:rgb(0,102,0); margin-top:0px; margin-bottom:5px; padding-top:0px; padding-bottom:0px; border:0px; list-style:none; word-wrap:normal; word-break:normal; line-height:21px; font-family:simsun; font-size:14px; background-color:rgb(225,225,225)">
+<span style="color:rgb(0,102,0); font-family:simsun; font-size:14px; line-height:21px; background-color:rgb(225,225,225)"><span style="white-space:pre"></span>application 服务器启动到停止这段时间</span><span style="white-space:pre">
+</span><span style="white-space:pre"></span></p>
+<br>
+<span style="color:#006600">&nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">out:所属类JspWriter</span><br>
+<span style="color:#006600">&nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">request:实现了HttpServletRequest接口（此接口继承于ServletRequest接口）</span><br>
+<span style="color:#006600">&nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">response:实现了HttpServletResponse接口(此接口继承于ServletResponse接口)</span><br>
+<span style="color:#006600">&nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">session:实现了HttpSession接口</span><br>
+<span style="color:#006600">&nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><span style="color:#006600">application对象实现的接口ServletContext&nbsp;</span><br>
+<span style="color:#006600"><br>
+</span>
+<p><span style="color:#ff0000">1.out对象：向客户端输出信息</span><br>
+</p>
+<p><span style="color:#006600"><span style="white-space:pre">主要有两个方法，print和println，后者不能实现换行</span>&nbsp;&nbsp;</span></p>
+<p><span style="white-space:pre"><span style="color:#006600">&nbsp;举例：输出一段粗体文字<br>
+&nbsp; out.print("&lt;b&gt;这是一段粗体文字&lt;/b&gt;");</span></span></p>
+<p><span style="color:#006600"><span style="white-space:pre">&nbsp;我们可以用out.print向客户端输出任何信息，比如说输出一个表格，等等。<br>
+</span>&nbsp;<span style="white-space:pre">在网页上使用System.out.println(),信息输出到控制台上。</span></span></p>
+<p><span style="color:#006600"><br>
+</span></p>
+<p><span style="color:#ff0000">2.request对象：获取客户端传递到服务器的信息。</span><br>
+<span style="color:#006600">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span style="color:#006600">&nbsp;&nbsp;request常用方法举例</span></p>
+<p><span style="color:#006600"><br>
+&nbsp; (1)getParameter<br>
+&nbsp; &nbsp; &nbsp;获取客户端传递给服务器的一个参数的值<br>
+&nbsp; (2)getParameterNames<br>
+&nbsp; &nbsp; &nbsp;获取客户端传递给服务器的所有参数的名字<br>
+&nbsp; (3)getParameterValues<br>
+&nbsp; &nbsp; &nbsp;获取一个参数的所有值(比如checkbox的情况)<br>
+&nbsp;<br>
+&nbsp; (4)setAttribute<br>
+&nbsp; (5)getAttribute &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;attribute=属性<br>
+&nbsp; (6)removeAttribute<br>
+<span style="white-space:pre"></span>主要用在struts框架中<br>
+<br>
+<span style="white-space:pre"></span>必须在同一次请求中设置的属性，才能获取到<br>
+&nbsp;(7)getAttributeNames</span></p>
+<p><span style="color:#006600"><br>
+&nbsp;(8)getCookies，讲Cookie的时候单独讲<br>
+&nbsp; &nbsp; cookie 小甜饼，把个人信息存放在客户端的一门技术</span></p>
+<p><br>
+<span style="color:#006600">(9)getCharacterEncoding</span><br>
+<span style="color:#006600">&nbsp;</span><br>
+<span style="color:#006600">&nbsp; (10)getContentLength</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (11)getMethod</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (12)getRequestURL</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (13)getRemoteAddr</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (14)getServerName</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (13)getServerPort</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (14)getServletPath</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp; (15)getContextPath</span><br>
+<br>
+<br>
+<span style="color:#006600">&nbsp;（16）getHeader,getHeaders,getHeaderNames</span><br>
+<span style="color:#006600">&nbsp; &nbsp;&nbsp;</span><br>
+<span style="color:#006600">&nbsp; &nbsp; Header：网页头，网页控制信息</span><br>
+<span style="color:#006600">&nbsp; &nbsp;</span><br>
+<span style="color:#006600">&nbsp; &nbsp;request.getHeader("Referer") 来自的网页</span><br>
+<br>
+<span style="color:#ff0000">3.response对象:&nbsp;向客户端浏览器输出信息，对客户的请求做成响应</span><br>
+<span style="color:#006600">&nbsp;</span><br>
+<span style="color:#ff0000">4.session:&nbsp;会话失效时间 ，tomcat中默认是30分钟，可以设置。 每个用户的会话空间是隔离的。</span><br>
+<br>
+<span style="color:#ff0000">5.application 应用对象</span><br>
+<span style="color:#006600">&nbsp;&nbsp;</span><br>
+<span style="color:#006600">&nbsp; application,session,request：都可以通过setAttribute来设置属性，用getAttribute来获取属性，但是可见范围不一样。</span><br>
+<span style="color:#006600">&nbsp; application对象所设置的属性，所有会话可见，而session对象设置的属性，只有在同一个session中可见。</span><br>
+<span style="color:#006600">&nbsp; 同样，前面讲过的request,它所设置的属性，只有在同一次请求之间可见。</span><br>
+<br>
+<span style="color:#006600">&nbsp;application 不会过期，在整个服务器运行期间都有效，服务器重启后丢失。</span><br>
+<br>
+<span style="color:#006600">&nbsp; application的其他一些方法：</span><br>
+<span style="color:#006600">&nbsp;&nbsp;</span><br>
+<span style="color:#006600">&nbsp; application.getRealPath()</span><br>
+<br>
+<span style="color:#ff0000">6.page对象</span><br>
+<span style="color:#006600">&nbsp;&nbsp;</span><br>
+<span style="color:#006600">&nbsp; JSP网页本身，page对象是当前页面转换后的Servlet类的实例。从转换后的Servlet类的代码中，可以看到这种关系：Object page = this;在JSP页面中，很少使用page对象。</span><br>
+<span style="color:#006600">&nbsp;&nbsp;</span><br>
+<span style="color:#ff0000">7.config对象:<span style="font-family:Verdana,Arial,Helvetica,sans-serif; line-height:23.8px; background-color:rgb(249,249,249)"><span style="font-size:12px">主要作用是取得服务器的配置信息。</span></span></span><br>
+<span style="color:rgb(0,102,0); font-family:宋体; line-height:25px; background-color:rgb(245,253,255)"><span style="font-size:10px">常用的方法有getInitParameter和getInitParameterNames，以获得Servlet初始化时的参数。</span></span></p>
+<p><span style="font-family:宋体; line-height:25px; background-color:rgb(245,253,255)"><span style="font-size:10px; color:#006600"><span style="font-family:Verdana,Arial,Helvetica,sans-serif; line-height:23.8px; background-color:rgb(249,249,249)">通过 pageConext对象的
+ getServletConfig() 方法可以获取一个config对象。当一个Servlet 初始化时，容器把某些信息通过 config对象传递给这个 Servlet。 开发者可以在web.xml 文件中为应用程序环境中的Servlet程序和JSP页面提供初始化参数。</span><br>
+</span></span></p>
+<span style="color:#ff0000">8.exception对象</span><br>
+<span style="color:#006600">&nbsp;在可能产生错误的文件中用page指令指定errorpage</span><br>
+<span style="color:#006600">&nbsp;在所指定的errorpage中，设置isErrorPage="true"这个page指令，然后用exception对象获取错误信息。</span><br>
+<span style="color:#006600">&lt;%@page errorPage="error.jsp"%&gt; &nbsp;</span><br>
+<br>
+<span style="color:#006600">session也是需要在页面上设置page指令的。</span><br>
+<br>
+<span style="color:#ff0000">9.pageContext对象</span><br>
+<br>
+<span style="color:#006600">作用：a.可以用它获取其他八大内置对象的句柄（本身的句柄不用获取）</span><br>
+<br>
+<span style="color:#006600">out</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getOut()</span><br>
+<span style="color:#006600">request</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getRequest();</span><br>
+<span style="color:#006600">response</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getResponse();</span><br>
+<span style="color:#006600">session</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getSession();</span><br>
+<span style="color:#006600">application</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getServletContext();</span><br>
+<span style="color:#006600">config</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getServletConfig();</span><br>
+<span style="color:#006600">exception</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getException();</span><br>
+<span style="color:#006600">page</span><span style="color:rgb(0,102,0); white-space:pre">
+</span><span style="color:#006600">pageContext.getPage();</span><br>
+<br>
+<br>
+<span style="color:#006600">b.可以用它设置或者获取4个不同范围(page,request,session,application)内的变量的值</span><br>
+<br>
+<br>
+<span style="color:#006600">设置的值只能在本页面内有效</span><br>
+<span style="color:#006600">pageContext.setAttribute ("name" , "John") ;</span><br>
+<br>
+<br>
+<span style="color:#006600">设置的值在同一个request请求中有效。 &nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><br>
+<span style="color:#006600">pageContext.setAttribute（"name" , "John", PageContext.REQUEST_SCOPE)）</span><br>
+<span style="color:#006600">相当于request.setAttribute("name" , "John");</span><br>
+<br>
+<br>
+<span style="color:#006600">设置的值在同一个session请求中有效。 &nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><br>
+<span style="color:#006600">pageContext.setAttribute（"name" , "John", PageContext.SESSION_SCOPE)）</span><br>
+<span style="color:#006600">相当于session.setAttribute("name" , "John");</span><br>
+<br>
+<br>
+<span style="color:#006600">设置的值在整个应用中有效。 &nbsp; </span><span style="color:rgb(0,102,0); white-space:pre"></span><br>
+<span style="color:#006600">pageContext.setAttribute（"name" , "John", PageContext.APPLICATION_SCOPE)）</span><br>
+<span style="color:#006600">相当于application.setAttribute("name" , "John");</span>

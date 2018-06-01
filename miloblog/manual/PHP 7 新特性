@@ -1,0 +1,23 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>标量类型与返回值类型声明</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>NULL<span style=" color:#c0c0c0;"> </span>合并运算符</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>太空船运算符（组合比较符）</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>常量数组</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>匿名类</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>Closure::call()</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>过滤<span style=" color:#c0c0c0;"> </span>unserialize()</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>IntlChar()</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>CSPRNG</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>异常</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>use<span style=" color:#c0c0c0;"> </span>语句</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>错误处理</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>intdiv()<span style=" color:#c0c0c0;"> </span>函数</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>Session<span style=" color:#c0c0c0;"> </span>选项</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>废弃特性</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>移除的扩展</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">PHP<span style=" color:#c0c0c0;"> </span>7<span style=" color:#c0c0c0;"> </span>移除的<span style=" color:#c0c0c0;"> </span>SAPI<span style=" color:#c0c0c0;"> </span></pre>

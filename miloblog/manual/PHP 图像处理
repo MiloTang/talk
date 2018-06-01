@@ -1,0 +1,28 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">gd_info()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>取得当前安装的<span style=" color:#c0c0c0;"> </span>GD<span style=" color:#c0c0c0;"> </span>库的信息</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">getimagesize()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取图像信息</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">getimagesizefromstring()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取图像信息</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">image_type_to_extension()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取图片后缀</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">image_type_to_mime_type()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回图像的<span style=" color:#c0c0c0;"> </span>MIME<span style=" color:#c0c0c0;"> </span>类型</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">image2wbmp()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>输出WBMP图片</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imageaffine()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回经过仿射变换后的图像</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imageaffinematrixconcat()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>连接两个矩阵</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imageaffinematrixget()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取矩阵</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagealphablending()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设定图像的混色模式</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imageantialias()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>是否使用抗锯齿（antialias）功能</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagearc()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>画椭圆弧</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagechar()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>写出横向字符</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecharup()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>垂直地画一个字符</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorallocate()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>为一幅图像分配颜色</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorallocatealpha()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>为一幅图像分配颜色和透明度</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorat()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>取得某像素的颜色索引值</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorclosest()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>取得与指定的颜色最接近的颜色的索引值</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorclosestalpha()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>取得与指定的颜色加透明度最接近的颜色的索引</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagecolorclosesthwb()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>取得与指定的颜色最接近的色度的黑白色的索引</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">imagesx()<span style=" color:#c0c0c0;"> </span>、imagesy()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取图像宽度与高度</pre>

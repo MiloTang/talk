@@ -1,0 +1,16 @@
+
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">执行一个正则表达式搜索和替换</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_grep<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>返回匹配模式的数组条目</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_last_error<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>返回最后一个PCRE正则执行产生的错误代码</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_match_all<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个全局正则表达式匹配</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_match<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个正则表达式匹配</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_quote<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>转义正则表达式字符</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_replace_callback_array<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个正则表达式搜索并且使用一个回调进行替换</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_replace_callback<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个正则表达式搜索并且使用一个回调进行替换</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_replace<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个正则表达式的搜索和替换</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">preg_split<span style=" color:#c0c0c0;"> &nbsp;&nbsp;&nbsp;&nbsp;</span>通过一个正则表达式分隔字符串</pre>

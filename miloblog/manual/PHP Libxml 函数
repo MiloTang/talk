@@ -1,0 +1,11 @@
+
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">libxml_clear_errors()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>清空<span style=" color:#c0c0c0;"> </span>Libxml<span style=" color:#c0c0c0;"> </span>错误缓冲。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">libxml_get_errors()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>检索错误数组。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">libxml_get_last_error()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>从<span style=" color:#c0c0c0;"> </span>Libxml<span style=" color:#c0c0c0;"> </span>检索最后的错误。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">libxml_set_streams_context()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>为下一次<span style=" color:#c0c0c0;"> </span>Libxml<span style=" color:#c0c0c0;"> </span>文档加载或写入设置流环境。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">libxml_use_internal_errors()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>禁用<span style=" color:#c0c0c0;"> </span>Libxml<span style=" color:#c0c0c0;"> </span>错误，允许用户按需读取错误信息。</pre>

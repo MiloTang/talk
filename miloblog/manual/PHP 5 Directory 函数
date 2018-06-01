@@ -1,0 +1,16 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">chdir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>改变当前的目录。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">chroot()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>改变根目录。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">closedir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭目录句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">dir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回<span style=" color:#c0c0c0;"> </span>Directory<span style=" color:#c0c0c0;"> </span>类的实例。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">getcwd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回当前工作目录。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">opendir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>打开目录句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">readdir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回目录句柄中的条目。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">rewinddir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>重置目录句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">scandir()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回指定目录中的文件和目录的数组。</pre>

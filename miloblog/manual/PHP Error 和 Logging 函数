@@ -1,0 +1,18 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">debug_backtrace()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>生成<span style=" color:#c0c0c0;"> </span>backtrace。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">debug_print_backtrace()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>打印<span style=" color:#c0c0c0;"> </span>backtrace。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">error_get_last()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获得最后发生的错误。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">error_log()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>向服务器错误记录、文件或远程目标发送一个错误。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">error_reporting()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>规定报告哪个错误。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">restore_error_handler()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>恢复之前的错误处理程序。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">restore_exception_handler()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>恢复之前的异常处理程序。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">set_error_handler()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置用户自定义的错误处理函数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">set_exception_handler()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置用户自定义的异常处理函数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">trigger_error()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>创建用户自定义的错误消息。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">user_error()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>trigger_error()<span style=" color:#c0c0c0;"> </span>的别名。</pre>

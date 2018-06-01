@@ -1,0 +1,25 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cal_days_in_month()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>针对指定的年份和历法，返回一个月中的天数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cal_from_jd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为指定历法的日期。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cal_info()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回有关指定历法的信息。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">cal_to_jd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把指定历法的日期转换为儒略日计数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">easter_date()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回指定年份的复活节午夜的<span style=" color:#c0c0c0;"> </span>Unix<span style=" color:#c0c0c0;"> </span>时间戳。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">easter_days()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回指定年份的复活节与<span style=" color:#c0c0c0;"> </span>3<span style=" color:#c0c0c0;"> </span>月<span style=" color:#c0c0c0;"> </span>21<span style=" color:#c0c0c0;"> </span>日之间的天数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">frenchtojd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把法国共和历法的日期转换成为儒略日计数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">gregoriantojd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把格利高里历法的日期转换成为儒略日计数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jddayofweek()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回日期在周几。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdmonthname()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回月的名称。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdtofrench()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为法国共和历法的日期。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdtogregorian()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为格利高里历法的日期。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdtojewish()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为犹太历法的日期。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdtojulian()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为儒略历法的日期。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jdtounix()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略日计数转换为<span style=" color:#c0c0c0;"> </span>Unix<span style=" color:#c0c0c0;"> </span>时间戳。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">jewishtojd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把犹太历法的日期转换为儒略日计数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">juliantojd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把儒略历法的日期转换为儒略日计数。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">unixtojd()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把<span style=" color:#c0c0c0;"> </span>Unix<span style=" color:#c0c0c0;"> </span>时间戳转换为儒略日计数。</pre>

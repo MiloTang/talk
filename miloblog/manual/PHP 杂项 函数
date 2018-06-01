@@ -1,0 +1,30 @@
+  
+	
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">connection_aborted()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>检查是否断开客户机。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">connection_status()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回当前的连接状态。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">connection_timeout()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>在<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>4.0.5<span style=" color:#c0c0c0;"> </span>中不赞成使用。检查脚本是否超时。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">constant()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回一个常量的值。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">define()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>定义一个常量。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">defined()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>检查某常量是否存在。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">die()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>输出一条消息，并退出当前脚本。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">eval()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把字符串当成<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>代码来计算。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">exit()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>输出一条消息，并退出当前脚本。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">get_browser()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回用户浏览器的性能。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">highlight_file()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>对文件进行<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>语法高亮显示。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">highlight_string()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>对字符串进行<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>语法高亮显示。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">ignore_user_abort()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置与远程客户机断开是否会终止脚本的执行。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">pack()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>把数据装入一个二进制字符串。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">php_check_syntax()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>在<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>5.0.5<span style=" color:#c0c0c0;"> </span>中不赞成使用。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">php_strip_whitespace()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回已删除<span style=" color:#c0c0c0;"> </span>PHP<span style=" color:#c0c0c0;"> </span>注释以及空白字符的源代码文件。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">show_source()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>highlight_file()<span style=" color:#c0c0c0;"> </span>的别名。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">sleep()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>延迟代码执行若干秒。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">time_nanosleep()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>延迟代码执行若干秒和纳秒。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">time_sleep_until()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>延迟代码执行直到指定的时间。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">uniqid()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>生成唯一的<span style=" color:#c0c0c0;"> </span>ID。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">unpack()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>从二进制字符串对数据进行解包。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">usleep()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>延迟代码执行若干微秒。</pre>

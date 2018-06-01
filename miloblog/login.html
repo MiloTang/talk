@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>{{.Title |html}}</title>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-glyphicons.css" rel="stylesheet">
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+<div class="container-fluid" style="background-color:sienna;margin-bottom:8px">
+    <div style="text-align:center;color: white">
+        <h3>后台登陆</h3>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container-fluid" style="font-size:2.2rem;padding-top:1rem;text-align:center;">
+		    <div class="col-xs-6 col-sm-6">
+			<div class="dropdown">
+				<a href="/index/">
+					<span class="glyphicon glyphicon-home"></span>
+				</a>
+			</div>
+			</div>	
+			<div class="col-xs-6 col-sm-6">
+			<div class="dropdown">
+				<a href="/manuallist/">
+					<span class="glyphicon glyphicon-book"></span>
+				</a>
+			</div>
+			</div>		
+	</div>
+</nav>
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-4 col-md-4">
+</div>
+<div class="col-sm-4 col-md-4" >
+<form class="form-horizontal"  action="/admin/" method="POST">
+   <div class="form-group">   
+      <div class="input-group input-group-lg">
+		<div class="input-group-addon">
+			<span class="glyphicon glyphicon-user"></span>
+		</div>
+		<input class="form-control" name="username" id="username" placeholder="昵称" value="{{.Username}}" autocomplete="off" type="text">
+		</div>
+   </div>
+
+   <div class="form-group">     
+      <div class="input-group input-group-lg">
+		<div class="input-group-addon">
+			<span class="glyphicon glyphicon-lock"></span>
+		</div>
+		<input class="form-control" name="password" id="password" placeholder="密码" autocomplete="off" type="password" value="{{.Password}}">
+	  </div>
+   </div>
+<!--
+	<div class="form-group">
+    <div class="input-group input-group-lg">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-check"></div>
+      <input type="text" class="form-control" placeholder="验证码">
+	  <div class="input-group-addon"><span>MILOGE</span></div>
+    </div>
+  </div>
+-->
+  <input type="hidden" name="token" value="{{.Token}}">	
+   <div class="form-group">
+      
+         <div class="checkbox">
+            <label>
+               <input type="checkbox"> 请记住我
+            </label>
+			<span style="color:red" class="full-right" >{{.Info}}</span>
+         </div>
+      
+   </div>
+   <div class="form-group">  
+         <button type="submit" class="btn btn-primary btn-lg btn-block ">登录</button>
+   </div>
+</form>
+</div>
+<div class="col-sm-4 col-md-4">
+</div>
+
+</div>
+</div>
+</body>
+</html>			

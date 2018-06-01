@@ -1,0 +1,35 @@
+
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">函数<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>描述</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_close()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭一个cURL会话。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_copy_handle()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>复制一个cURL句柄和它的所有选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_errno()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回最后一次的错误号。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_error()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回一个保护当前会话最近一次错误的字符串。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_escape()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回转义字符串，对给定的字符串进行URL编码。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_exec()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>执行一个cURL会话。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_file_create()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>创建一个<span style=" color:#c0c0c0;"> </span>CURLFile<span style=" color:#c0c0c0;"> </span>对象。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_getinfo()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取一个cURL连接资源句柄的信息。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_init()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>初始化一个cURL会话。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_add_handle()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>向curl批处理会话中添加单独的curl句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_close()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭一组cURL句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_exec()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>运行当前<span style=" color:#c0c0c0;"> </span>cURL<span style=" color:#c0c0c0;"> </span>句柄的子连接。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_getcontent()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>如果设置了CURLOPT_RETURNTRANSFER，则返回获取的输出的文本流。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_info_read()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取当前解析的cURL的相关传输信息。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_init()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回一个新cURL批处理句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_remove_handle()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>移除curl批处理句柄资源中的某个句柄资源。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_select()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>等待所有cURL批处理中的活动连接。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_setopt()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置一个批处理cURL传输选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_multi_strerror()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回描述错误码的字符串文本。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_pause()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>暂停及恢复连接。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_reset()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>重置libcurl的会话句柄的所有选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_setopt_array()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>为cURL传输会话批量设置选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_setopt()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置一个cURL传输选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_share_close()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>关闭cURL共享句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_share_init()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>初始化cURL共享句柄。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_share_setopt()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>设置一个共享句柄的cURL传输选项。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_strerror()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>返回错误代码的字符串描述。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_unescape()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>解码URL编码后的字符串。</pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">curl_version()<span style=" color:#c0c0c0;">&nbsp;&nbsp;&nbsp;&nbsp;</span>获取cURL版本信息。</pre>
